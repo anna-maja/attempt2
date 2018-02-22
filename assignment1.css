@@ -1,0 +1,128 @@
+h1, h2, body {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+body {
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 2px 4px 2px 4px;
+  margin: auto; 
+}
+tr, knapp, form, footer {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}  
+button {
+  margin: auto;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: gainsboro;
+  color: rgb(82, 5, 5);
+  padding: 8px 20px 8px 20px;
+  margin: 1rem;
+
+}
+img {
+  width: 200px;
+  height: 100px;
+  border:  black solid;
+  margin: auto; 
+}
+
+form {
+  font-size: 0.9rem;
+  /* text-align: center;
+  background-color: gainsboro; */
+  color: black;
+}
+
+
+footer {
+font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+font-size: 0.8rem;
+text-align: center;
+color: grey;
+background-color: gainsboro;
+} 
+
+/* table {
+  background-color: gainsboro;
+  border-collapse: collapse;
+} */
+tr {
+  padding: 0.5rem;
+  border-bottom: 0.5 solid gray;
+}
+.th {
+  margin: auto; 
+  text-align: center; 
+  font-size: 1;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px black solid;
+  border-collapse: collapse;
+  background-color: aquamarine;
+}
+.prtab{
+  border: black solid; 
+  border-collapse: collapse;
+  text-align: center;
+  padding: 1rem;
+}
+
+td {
+  font-size: 0.8;
+  padding: 0.1rem;
+}/*
+knapp: mindre storlek, kontur, centrerad text, touppercase
+knappBuy: färg1 
+knappSend: färg2 
+*/ /*
+form: samma storlek som i knapp, men svart.
+*/ /*
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/*
+Välkommen till vår webshop: vanlig h1-rubrik. 
+Titeln kan vara en konstant.
+Header
+	Hela head inkl body-start och h1
+	Title konstant
+Produkterna ligger i en tabell. 
+”Produkter” == tablehead.
+Sen varje produkt i en td:
+	Produktnamn
+	Bild
+	Pris
+	Köpnu-knapp
+Köpnu-knapp: leder till sida med beställningsformulär. 
+Beställningsformulär: 
+	Högst upp: h1 Beställningsformulär (konstant? Samma i titel och h1?)
+	info om vald produkt (från startsidan via GET-metoden)
+	Ange namn, epost-adress, leveransadress, möjlighet till meddelande.
+	Skicka == submit
+Submit: beställningen skickas med e-post
+	till mig
+	till kunden
+Sidfot – separat footer. Samma på både produkt- och formulärsidan.
+
+Sida 1 – startsida	 
+Header-länk
+Tabell
+Footer-länk
+Sida 2		
+Header-länk
+Beställningsformulär
+Footer-länk
+	
+
+
+*/
