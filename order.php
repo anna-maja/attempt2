@@ -15,53 +15,39 @@ $artikelnummer = $_GET['id'];
 // echo "</pre>";
 
 ?>
-
-    <?php
+<?php
     echo "Du har valt att köpa " . $name . ". Utmärkt val!"
-    ?>
-</p>
+?>
+
 <p>Fyll i formuläret nedan för att slutföra din beställning. <br>
 Du kommer sedan att få se sammanställningen av alla uppgifter, för att kunna bekräfta. <br>
 Ett bekräftelsemail med alla uppgifter kommer därefter att skickas till angiven mailadress.</p>
 
-<table>
-<form method="post" action="exit.php?id=<?=$id?>">
+<form method="post" action="exit.php?id=<?=$id?>&pris=<?=$pris?>">
+    <table>
+        <tr><th colspan="2" class="th"> &bull;&bull;&bull;Din beställning: <?=$name?><i></th></tr>
+        <tr><td colspan="2" style="text-align:center"> <hr><b> Uppgifter om beställaren </b><br>(fält markerade med * är obligatoriska) <hr></td></tr>
+        <tr><td>* Förnamn: </td>
+        <td><input name="fnamn" type="text" required></td></tr>
+        <tr><td>* Efternamn</td>
+        <td><input name="enamn" type="text" required></td></tr>
+        <tr><td>* Adress</td><td>
+        <input name="adr" type="text" required></td></tr>
+        <tr><td>* Postnummer + ort:</td>
+        <td><input name="postadr" type="text" required></td></tr>
+        <tr><td>* E-post:  </td>
+        <td><input name="epost" type="text" required> </td></tr>
+        <tr><td>Leveransadress (om annan än ovan): </td>
+        <td><input name="levadr" type="text"> </td></tr>
 
-<tr><th colspan="2" class="th"> &bull;&bull;&bull;Din beställning: <?=$name?><i></th></tr>
-<tr><td colspan="2" style="text-align:center"> <hr><b> Uppgifter om beställaren </b><br>(fält markerade med * är obligatoriska) <hr></td></tr>
-<tr><td>* Förnamn: </td>
-<td><input name="fnamn" type="text" required></td></tr>
-<tr><td>* Efternamn</td>
-<td><input name="enamn" type="text" required></td></tr>
-<tr><td>* Adress</td><td>
-<input name="adr" type="text" required></td></tr>
-<tr><td>* Postnummer + ort:</td>
-<td><input name="postadr" type="text" required></td></tr>
-<tr><td>* E-post:  </td>
-<td><input name="epost" type="text" required> </td></tr>
-<tr><td>Leveransadress (om annan än ovan): </td>
-<td><input name="levadr" type="text"> </td></tr>
-<tr><td>Ev meddelande:</td>
-<td><textarea name="meddelande" rows="5" cols="40"></textarea></td></tr>
-
-</table> 
-<button>
-<input
-     type="submit" value="Skicka">
+    </table> 
+    <button>
+        <input type="submit" value="Skicka">
 </button>
 </form>
 
-<!-- <a href="exit.php" class="btn btn-primary">Bekräfta</a> -->
-</form>
-
-
-<?php
-echo "<pre>";
-print_r($_GET);
-echo "</pre>";
-?>
-
-
+        <!-- <a href="exit.php" class="btn btn-primary">Bekräfta</a> -->
+        </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

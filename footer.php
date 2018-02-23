@@ -10,6 +10,7 @@ ini_set("display_errors", 1);
 <link rel="stylesheet" href="assignment1.css">
 <hr>
 <footer>
+<p>INLÄMNINGSUPPGIFT I BACKEND, KVALIT17, 2018-02-23</p>
 <?=COMPANY?>&nbsp;&nbsp; &bull;&nbsp;  &nbsp;  &nbsp;<?=WEBMASTER?> <br>
 Copyright &copy; <?php echo date("Y"); ?> 
 </footer>
